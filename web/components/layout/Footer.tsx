@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <footer className="absolute bottom-0 w-full text-center text-mono text-sm text-slate-500 py-2">
+    <footer className="absolute bottom-0 w-full text-center text-mono text-sm text-muted-foreground py-2">
       Built by{" "}
       <Link
         href="https://pratikstemkar.in"

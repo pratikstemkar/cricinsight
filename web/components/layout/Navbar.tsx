@@ -1,19 +1,22 @@
 import { LogIn } from "lucide-react";
 import { Button } from "../ui/button";
+import Link from "next/link";
+import { DarkToggle } from "./DarkToggle";
 
 const Navbar = () => {
   return (
-    <nav className="py-2 px-2 lg:px-12 flex w-full justify-between items-center">
-      <h1 className="text-3xl lg:text-4xl font-extrabold tracking-tight">
-        Insight
-      </h1>
-      <div className="space-x-2">
-        <Button variant="default" size="sm">
-          <LogIn className="mr-2 h-4 w-4" />
-          <span>Login</span>
-        </Button>
-      </div>
-    </nav>
+    <header className="sticky top-0 z-10">
+      <nav className="max-w-7xl p-2 flex justify-between items-center m-auto">
+        <Link href="/">
+          <h1 className="text-3xl lg:text-4xl font-extrabold tracking-tight hover:cursor-pointer hover:text-green-600">
+            CricInsight
+          </h1>
+        </Link>
+        <div className="space-x-2">
+          <DarkToggle />
+        </div>
+      </nav>
+    </header>
   );
 };
 
